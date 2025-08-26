@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/ttf/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* SUIT 폰트 */
 @font-face {
   font-family: 'SUIT';

@@ -208,7 +208,7 @@ function Term1Modal({ setViewInformTerm, viewInformTerm }) {
               개인정보(인적사항) 수집에 대한 안내
             </span>
             <span className="text-[3vw] md:text-base font-light">
-              DO IT은 개인정보보호법 등 관련 법규에 의거하여 {"'"}DO IT. 3기
+              DO IT은 개인정보보호법 등 관련 법규에 의거하여 {"'"}DO IT. 4기
               신입부원 모집 지원서{"'"} 수집을 위해 아래와 같이 개인정보를 수집,
               이용하고자 합니다. 내용을 면밀히 읽으신 후 동의 여부를
               결정해주세요.
@@ -218,7 +218,7 @@ function Term1Modal({ setViewInformTerm, viewInformTerm }) {
               <br />
               2. 수집 이용 목적 : 지원 절차 진행 및 연락
               <br />
-              3. 정보 보유 기간 : 신입부원 선발 완료(2025.3.17) 후 1년
+              3. 정보 보유 기간 : 신입부원 선발 완료(2025.9.14) 후 2년
               <br />
             </span>
             <span className="text-[3vw] md:text-base font-light">
@@ -276,7 +276,7 @@ function Term2Modal({ setViewPortfolioTerm, viewPortfolioTerm }) {
               개인정보(포트폴리오) 수집에 대한 안내
             </span>
             <span className="text-[3vw] md:text-base font-light">
-              DO IT은 개인정보보호법 등 관련 법규에 의거하여 {"'"}DO IT. 3기
+              DO IT은 개인정보보호법 등 관련 법규에 의거하여 {"'"}DO IT. 4기
               신입부원 모집 지원서{"'"} 수집을 위해 아래와 같이 개인정보를 수집,
               이용하고자 합니다. 내용을 면밀히 읽으신 후 동의 여부를
               결정해주세요.
@@ -287,7 +287,7 @@ function Term2Modal({ setViewPortfolioTerm, viewPortfolioTerm }) {
               <br />
               2. 수집 이용 목적 : 지원 절차 진행 및 연락
               <br />
-              3. 정보 보유 기간 : 신입부원 선발 완료(2025.3.17) 후 1년
+              3. 정보 보유 기간 : 신입부원 선발 완료(2025.9.14) 후 2년
               <br />
             </span>
             <span className="text-[3vw] md:text-base font-light">

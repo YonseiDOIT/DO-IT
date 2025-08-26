@@ -36,9 +36,9 @@ export default function Q4Form({ setFormData, formData }) {
         <div className="md:w-[40%] pt-10">
           <span className="text-[5vw] md:text-2xl xl:text-3xl font-semibold">
             {selectedQ4Exp === true
-              ? '어떤 프로젝트에서 어떤 역할을 수행했는지 서술해주세요.'
+              ? '어떤 프로젝트였는지, 팀에서 어떤 역할을 수행했는지,어떤 점을 배웠는지 최대한 자세하게 작성해주세요.'
               : selectedQ4Exp === false
-              ? '프로젝트를 잘 마무리 하기 위해 어떤 노력을 할 것인가요?'
+              ? '프로젝트를 진행할 때 어떤 것이 가장 중요하다고 생각하는지 본인의 경험과 함께 알려주세요.'
               : null}
           </span>
         </div>

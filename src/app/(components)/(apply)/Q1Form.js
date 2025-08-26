@@ -21,9 +21,6 @@ export default function Q1Form({ setFormData, formData }) {
 
           <div className="flex flex-col gap-y-2">
             <span className="text-[#8A9FB1]">
-              없을 경우, 없음으로 기재해주세요
-            </span>
-            <span className="text-[#8A9FB1]">
               *팀빌딩에 참고하기 위한 용도로 사용됩니다.
             </span>
           </div>

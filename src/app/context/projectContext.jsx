@@ -744,6 +744,402 @@ const projectLists = [
       },
     ],
   },
+  {
+    id: 13,
+    title: '와따감',
+    projectSummary: '위치 기반의 감정 기록 어플',
+    imgSrc: '/projects/3기/1/wattagam_Thumbnail.png',
+    type: 'APP',
+    term: [3],
+    teamName: '와따감',
+    projectBackground: `와따감은 위치 기반으로 감정과 일기를 기록할 수 있는 모바일 애플리케이션입니다.
+
+    시간이 흐름에 따라 장소는 변화하고, 그곳에 담긴 추억과 감정 역시 점차 희미해집니다.
+    우리는 이러한 아쉬움을 해소하고자, 특정 장소에서의 감정과 경험을 기록할 수 있는 일기 앱을 개발하게 되었습니다.
+
+    사용자는 자신이 머문 장소에 감정을 남기고, 이를 통해 소중한 기억을 보존할 수 있습니다. 또한, 입력된 감정 데이터를 바탕으로 통계를 제공함으로써, 사용자 스스로를 더 깊이 이해하고 성찰할 수 있는 기회를 제공합니다.`,
+    projectTool: [
+      'React Native',
+      'Expo',
+      'Java',
+      'SpringBoot',
+      'PostgreSQL',
+      'Figma',
+    ],
+    projectFeatures: `1. 위치 기반 감정 및 일기 기록 – 지도 상의 특정 장소에 감정,일기,사진을 함께 기록
+    
+    2. 감정 통계 – 한 달동한 입력된 감정들의 개수를 그래프로 시각화
+    
+    3. 일기 피드 – 기록들을 한 곳에 모아 볼 수 있는 기능
+
+    4. 친구 기능 – 친구들의 공개된 기록들을 볼 수 있고, 자신의 기록을 링크를 통해 공유할 수 있는 기능
+
+    5. 감정 분포 – 사용자의 감정 데이터를 기반으로 해당 지역이나 특정 장소에 대한 주된 감정을 분석하여 지도 위에 시각적으로 표현`,
+    teamMember: [
+      {
+        fieldName: 'Product Manager',
+        member: ['김민규'],
+      },
+      {
+        fieldName: 'Product Designer',
+        member: ['김민구, 박가영'],
+      },
+      {
+        fieldName: 'Front-end Developer',
+        member: ['정연재'],
+      },
+      {
+        fieldName: 'Back-end Developer',
+        member: ['김담이, 조한나'],
+      },
+    ],
+    projectImgSrc: [
+      '/projects/3기/1/1.webp',
+      '/projects/3기/1/2.webp',
+      '/projects/3기/1/3.webp',
+      '/projects/3기/1/4.webp',
+      '/projects/3기/1/5.webp',
+      '/projects/3기/1/6.webp',
+      '/projects/3기/1/7.webp',
+      '/projects/3기/1/8.webp',
+      '/projects/3기/1/9.webp',
+      '/projects/3기/1/10.webp',
+    ],
+    projectLink: [
+      {
+        linkName: 'Github',
+        link: 'https://github.com/YonseiDOIT/Wattagam',
+        linkImg: '/common/github.svg',
+      },
+    ],
+  },
+  {
+    id: 14,
+    title: 'Flip',
+    projectSummary: '직관적인 UI로 일정을 한 번에 정리 해주는 올인원 스케줄링 플랫폼',
+    imgSrc: '/projects/3기/2/Flip_Thumbnail.png',
+    type: 'Web APP',
+    term: [3],
+    teamName: 'Flip',
+    projectBackground: `Flip은 복잡하고 산만한 일정 관리 앱에 지친 사용자를 위한 올인원 일정 관리 플랫폼입니다.
+
+      캘린더, 할 일, 과목・시간표 관리 등 대학생활에 필요한 다양한 기능을 하나로 모아, 여러 앱을 오가지 않고도 일정
+      을 효율적으로 관리할 수 있도록 구성되었습니다.
+
+      기존의 앱들이 기능은 많지만 복잡한 UI로 인해 사용에 불편함을 주는 경우가 많은 반면, Flip은 플립시계 형태의
+      직관적인 메인 화면, 모달 기반의 간결한 동선, 개인화 가능한 테마 설정을 통해 보다 쉽게 다가갈 수 있는 사용 경
+      험을 제공합니다.
+
+      단순히 일정을 기록하는 도구를 넘어, Flip은 일상 속 루틴을 정리하고 유지하는 데 도움이 되는 일정 파트너로 자
+      리잡는 것을 목표로 합니다.
+
+      누구나 꾸준히 사용할 수 있는 편리함과 감각적인 디자인을 함께 담아낸 일정 관리 서비스를 지향합니다.`,
+    projectTool: [
+      'Figma',
+      'React',
+      'TailwindCSS',
+      'Webpack',
+      'Java(Spring Boot)',
+      'PostgreSQL',
+      'Google Cloud Platform',
+      'Redis',
+      'Github Actions',
+      'Docker',
+    ],
+    projectFeatures: `🗓 올인원 일정 통합
+    캘린더, 할 일, 과목・시간표 등 다양한 일정을 한 곳에서 통합적으로 관리할 수 있어, 여러 앱을 오갈 필요 없이 효율
+    적인 일정 정리가 가능합니다.
+
+    🗓 플립시계 기반 직관적 UI
+    메인 화면에 플립시계 형태를 적용해 현재 시간을 중심으로 일정 흐름을 한눈에 파악할 수 있도록 구성하였고, 시
+    각적 몰입감을 제공합니다.
+
+    🗓 모달 중심의 간결한 인터랙션
+    페이지 이동 없이 모든 기능을 모달 안에서 해결할 수 있도록 설계해, 불필요한 동선 없이 빠르고 편리한 사용 경험
+    을 제공합니다.
+    
+    🗓 개인화 가능한 테마 설정
+    다크/라이트모드 전환, 컬러 커스터마이징 기능을 통해 사용자가 원하는 분위기와 취향에 맞게 서비스 환경을 설정
+    할 수 있습니다.`,
+    teamMember: [
+      {
+        fieldName: 'Product Manager',
+        member: ['손나영'],
+      },
+      {
+        fieldName: 'Product Designer',
+        member: ['주해찬'],
+      },
+      {
+        fieldName: 'Front-end Developer',
+        member: ['이가림'],
+      },
+      {
+        fieldName: 'Back-end Developer',
+        member: ['이서연, 왕우석'],
+      },
+      {
+        fieldName: 'Contribute (Front-end)',
+        member: ['곽민철, 정연재'],
+      },
+    ],
+    projectImgSrc: [
+      '/projects/3기/2/1.webp',
+      '/projects/3기/2/2.webp',
+      '/projects/3기/2/3.webp',
+      '/projects/3기/2/4.webp',
+      '/projects/3기/2/5.webp',
+      '/projects/3기/2/6.webp',
+      '/projects/3기/2/7.webp',
+    ],
+    projectLink: [
+      {
+        linkName: 'Github',
+        link: 'https://github.com/DO-IT-Flip',
+        linkImg: '/common/github.svg',
+      },
+    ],
+  },
+  {
+    id: 15,
+    title: 'Voin',
+    projectSummary: '장점을 기록하고 발견하는 자기이해 플랫폼',
+    imgSrc: '/projects/3기/3/Voin_Thumbnail.png',
+    type: 'APP',
+    term: [3],
+    teamName: '도전하는 청년들',
+    projectBackground: `“혹시, 당신의 장점은 무엇인가요?”
+
+    막상 대답하려고 하면 막연하게만 떠오르고, 구체적으로 말하기는 쉽지 않습니다.
+    단점은 쉽게 이야기하면서도, 장점 앞에서는 괜히 겸손해지거나 ‘이게 장점일까?’ 하고 의심하게 되죠.
+
+    그래서 우리는 일상 속 장점을 더 쉽게 발견하고 기록할 수 있는 플랫폼 'VOIN'을 기획했어요.
+    VOIN에서 장점이 드러난 순간을 기록하면, 그 순간에 맞는 장점 키워드가 담긴 코인으로 저장됩니다.
+
+    이렇게 모인 코인은 장점 아카이브에 차곡차곡 쌓여서 언제든지 꺼내볼 수 있는 자산이 될 거예요.
+
+    소소한 일상 속 장점을 발견하고, 나만의 언어로 기록하는 자기이해 여정을 함께 시작해볼까요?`,
+    projectTool: [
+      'Figma',
+      'Blender',
+      'React',
+      'Spring',
+      'Spring Boot',
+      'PostgreSQL',
+      'ChatGPT API',
+      'Kakao Login API'
+    ],
+    projectFeatures: `✌️ 나의 장점 코인 찾기
+    오늘의 일기를 쓰거나 지난 사례를 기록하면서 자연스럽게 나의 장점을 발견해요.
+
+    🫰 친구의 장점 코인 찾기
+    친구의 장점이 드러난 순간을 기록해 코인을 만들고 함께 공유해봐요.
+
+    👏 AI로 장점 키워드 찾기
+    기록한 순간에 빛났던 장점 키워드를 찾아주는 자동 기능으로, 내가 몰랐던 새로운 강점을 발견할 수 있어요.
+
+    👍 장점 피드 둘러보기
+    나와 친구가 만든 코인들을 피드에서 확인하고 서로의 장점에 공감과 응원을 보낼 수 있어요.
+
+    🤲 장점 코인 아카이브
+    지금까지 모은 모든 장점 코인을 한눈에 볼 수 있는 나만의 아카이브예요. 쌓여가는 나의 장점을 확인해 보세요.`,
+    teamMember: [
+      {
+        fieldName: 'Product Manager',
+        member: ['신선림'],
+      },
+      {
+        fieldName: 'Product Designer',
+        member: ['진기원'],
+      },
+      {
+        fieldName: 'Front-end Developer',
+        member: ['전우진'],
+      },
+      {
+        fieldName: 'Back-end Developer',
+        member: ['김승조 박규민'],
+      },
+    ],
+    projectImgSrc: [
+      '/projects/3기/3/1.webp',
+      '/projects/3기/3/2.webp',
+      '/projects/3기/3/3.webp',
+      '/projects/3기/3/4.webp',
+      '/projects/3기/3/5.webp',
+      '/projects/3기/3/6.webp',
+      '/projects/3기/3/7.webp',
+      '/projects/3기/3/8.webp',
+      '/projects/3기/3/9.webp',
+      '/projects/3기/3/10.webp',
+      '/projects/3기/3/11.webp',
+      '/projects/3기/3/12.webp',
+    ],
+    projectLink: [
+      {
+        linkName: 'Github',
+        link: 'https://github.com/YonseiDOIT/Voin',
+        linkImg: '/common/github.svg',
+      },
+    ],
+  },
+  {
+    id: 16,
+    title: 'Y-nnect',
+    projectSummary: '캠퍼스에서, 지금 바로 연결되는 우리',
+    imgSrc: '/projects/3기/4/Y-nnect_Thumbnail.png',
+    type: 'APP',
+    term: [3],
+    teamName: 'Y-nnect',
+    projectBackground: `캡퍼스 안에서 #실시간으로 #가볍고 #자연스럽게 연결되다. 
+    
+    캠퍼스에서 친구와 밥을 먹거나 커피를 마시고 싶을 때,
+    “지금 공강인 친구 없나?” 하고 생각해본 적이 있나요?
+
+    메신저로 일일이 묻기엔 번거롭고, SNS에 올리기엔 사소해서 부담스럽죠.
+    그렇게 멀리 있지 않지만, 어쩐지 멀게 느껴지는 친구들이 많습니다.
+
+    Y:NNECT는 이런 고민에서 출발했습니다.
+    위치·상태·시간표를 한 번에 공유하여, 연락 없이도 자연스럽게 연결될 수 있는 캠퍼스 전용 플랫폼입니다.`,
+    projectTool: [
+      'HTML',
+      'CSS',
+      'Javascript',
+      'Spring',
+      'Spring Security',
+      'MariaDB',
+      'JWT',
+      'Figma'
+    ],
+    projectFeatures: `실시간 지도 기반 위치 공유
+    내 위치와 친구 위치를 한눈에 확인하고, 클릭 시 상태 메시지와 시간표까지 표시.
+
+    친구 상태 및 시간표 공유
+    공강·수업·식사 등 상태를 색상으로 구분, 시간표 연동으로 공강 여부 바로 확인.
+
+    그룹 관리 및 필터링
+    ‘학과 친구’, ‘동아리’, ‘스터디’ 등 그룹별 관리와 필터링 가능.
+
+    개인정보 및 공개 범위 설정
+    닉네임·프로필·위치·상태 공개 범위를 자유롭게 조절.
+
+    간편 가입
+    카카오톡 소셜 로그인으로 이름만 입력하면 바로 사용 가능.`,
+    teamMember: [
+      {
+        fieldName: 'Product Manager',
+        member: ['신채현'],
+      },
+      {
+        fieldName: 'Product Designer',
+        member: ['김세민,윤서희'],
+      },
+      {
+        fieldName: 'Front-end Developer',
+        member: ['이동하'],
+      },
+      {
+        fieldName: 'Back-end Developer',
+        member: ['김태훈, 박태인'],
+      },
+    ],
+    projectImgSrc: [
+      '/projects/3기/4/1.webp',
+      '/projects/3기/4/2.webp',
+      '/projects/3기/4/3.webp',
+      '/projects/3기/4/4.webp',
+      '/projects/3기/4/5.webp',
+      '/projects/3기/4/6.webp',
+      '/projects/3기/4/7.webp',
+      '/projects/3기/4/8.webp',
+      '/projects/3기/4/9.webp',
+      '/projects/3기/4/10.webp',
+      '/projects/3기/4/11.webp',
+      '/projects/3기/4/12.webp',
+    ],
+    projectLink: [
+      {
+        linkName: 'Github',
+        link: 'https://github.com/YonseiDOIT/Voin',
+        linkImg: '/common/github.svg',
+      },
+    ],
+  },
+  {
+    id: 17,
+    title: '하우스윗',
+    projectSummary: '잘 맞는 룸메를 위한, 룸메이트 매칭 플랫폼',
+    imgSrc: '/projects/3기/5/Housewith_Thumbnail.png',
+    type: 'APP',
+    term: [3],
+    teamName: '가족',
+    projectBackground: `룸메이트 찾기, 이제 어려워말고 하우스윗에서 해요!
+
+    하우스윗은 기숙사 입주 전, 성향이 잘 맞는 룸메이트를 직접 탐색하고 매칭할 수 있는 플랫폼입니다. 
+
+    사용자가 스스로 원하는 조건을 설정하고, 성향 기반 필터를 통해 나와 잘 맞는 사람을 찾아 더 만족스러운 기숙사 생활을 시작할 수 있도록 돕습니다.`,
+    projectTool: [
+      'Figma',
+      'Notion',
+      'TypeScript',
+      'Tailwind CSS',
+      'Spring Boot',
+      'postgreSQL',
+      'AWS ec2',
+      'rds',
+      'redis',
+      'nginx'
+    ],
+    projectFeatures: `🏠생활 패턴 등록·수정·피드백
+    - 사용자가 취침·기상 시간, 소음 허용도, 생활 습관 등 자신의 생활 패턴을 상세 입력
+    - 이 데이터를 기반으로 호환성이 높은 룸메이트를 추천
+    - 매칭 이후 룸메이트로부터 생활 패턴 관련 피드백을 받아, 실제 생활에 맞춰 정보 수정 → 매칭 정확도와 신뢰도 지속 향상
+
+    🏠하우스 생성·지원·둘러보기
+    - ‘하우스’는 룸메이트 모집 공고 형태의 가상 공간
+    - 방장(생성자)이 모집 인원, 선호 성향, 기숙사 위치 등을 설정
+    - 누구나 하우스를 생성할 수 있으나, 동시에 보유할 수 있는 하우스는 1개로 제한
+    - 다른 사용자가 생성한 하우스를 자유롭게 둘러보고 지원 가능
+
+    🏠필터 검색
+    - 원하는 기숙사, 생활 조건(흡연 여부, 청소 주기, 수면 시간 등)을 필터로 설정
+    - 조건에 맞는 하우스와 룸메이트를 빠르게`,
+        teamMember: [
+      {
+        fieldName: 'Product Manager',
+        member: ['최한나'],
+      },
+      {
+        fieldName: 'Product Designer',
+        member: ['조호진,이나의'],
+      },
+      {
+        fieldName: 'Front-end Developer',
+        member: ['곽민철, 이여은'],
+      },
+      {
+        fieldName: 'Back-end Developer',
+        member: ['김민준, 김태훈'],
+      },
+    ],
+    projectImgSrc: [
+      '/projects/3기/5/1.webp',
+      '/projects/3기/5/2.webp',
+      '/projects/3기/5/3.webp',
+      '/projects/3기/5/4.webp',
+      '/projects/3기/5/5.webp',
+      '/projects/3기/5/6.webp',
+      '/projects/3기/5/7.webp',
+      '/projects/3기/5/8.webp',
+    ],
+    projectLink: [
+      {
+        linkName: 'Github',
+        link: 'https://github.com/YonseiDOIT/House-With',
+        linkImg: '/common/github.svg',
+      },
+    ],
+  },
 ];
 
 export function ProjectProvider({ children }) {
