@@ -13,14 +13,6 @@ import {
 export default function RecruitLanding() {
   const [field, setField] = useState('');
   const [fieldModile, setFieldMobile] = useState('');
-  // const controls = useAnimation();
-  // const [strokeColor1, setStrokeColor1] = useState('#FE74EF');
-  // const [fillColor1, setFillColor1] = useState('#FFFFFF');
-  // const [strokeColor2, setStrokeColor2] = useState('#DCF052');
-  // const [fillColor2, setFillColor2] = useState('#FFFFFF');
-  // const [strokeColor3, setStrokeColor3] = useState('#6439FE');
-  // const [fillColor3, setFillColor3] = useState('#FFFFFF');
-  // const [backgroundFill, setbackgroundFill] = useState(false);
 
   useEffect(() => {
     const values = ['management', 'frontend', 'backend', 'design'];
