@@ -12,6 +12,10 @@ const termList = [
     term: 'ALL',
   },
   {
+    id: 3,
+    term: '3기',
+  },
+  {
     id: 2,
     term: '2기',
   },

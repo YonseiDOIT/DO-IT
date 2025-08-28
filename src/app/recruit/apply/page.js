@@ -192,7 +192,7 @@ export default function Apply() {
       <div className="flex flex-col w-[80%] font-suit">
         <div className="flex justify-between text-5xl pt-20 leading-snug font-semibold text-[5vw] md:text-3xl xl:text-5xl">
           <span className="text-[#00B8FF]">DO IT.</span>
-          <span>신규부원 모집신청</span>
+          <span>4기 신규부원 모집</span>
         </div>
 
         {/* Form Step */}
@@ -269,9 +269,10 @@ export default function Apply() {
                   className={`text-[5vw] py-[2vw] px-[7vw] md:text-2xl md:py-3 md:px-14 rounded-full bg-[#00B8FF] text-[#FFFFFF] disabled:opacity-45 ${
                     page === 11 ? 'hidden' : 'block'
                   }`}
-                  disabled={!activeBtn}
+                  // disabled={!activeBtn}
+                  disabled={true}
                 >
-                  다음
+                  제출 불가(모집 전)
                 </motion.button>
               )}
               {page === 11 && response && (
