@@ -31,6 +31,8 @@ export default function RecruitLanding() {
         position: "relative",
         width: "100%",
         height: "100vh",
+        minHeight: "600px",
+        minWidth: "320px",
         overflow: "hidden",
         backgroundColor: "#000",
         color: "white",
