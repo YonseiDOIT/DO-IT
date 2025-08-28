@@ -19,7 +19,9 @@ export default function RecruitFieldCard({ fieldItem }) {
           {fieldItem.field}
         </span>
         <div className="flex flex-row items-center space-x-6">
-          <span className="text-[13px] md:text-base xl:text-xl">
+          <span
+            className="text-[13px] whitespace-normal break-keep md:text-base xl:text-xl"
+          >
             {fieldItem.name}
           </span>
           <motion.svg

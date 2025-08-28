@@ -134,7 +134,7 @@ export default function RecruitLanding() {
               fontFamily: "Montserrat",
             }}
           >
-            4TH RECRUITMENT
+            4TH RECRUITMENT{"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}
           </div>
 
           <div
