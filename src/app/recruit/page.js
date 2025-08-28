@@ -163,7 +163,7 @@ export default function Recruit() {
                 </div>
                 <div className="flex flex-col w-[85%] md:w-full md:justify-between items-start md:flex-col md:space-y-3 md:items-start">
                   <span className="text-[10vw] md:text-4xl xl:text-[40px]">
-                    9/17
+                    9/14
                   </span>
                   <span className="text-[6vw] md:text-base xl:text-xl text-[#657786]">
                     최종 결과
