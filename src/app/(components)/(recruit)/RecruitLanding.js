@@ -47,15 +47,26 @@ export default function RecruitLanding() {
         muted
         loop
         playsInline
+        controls={false}
+        tabIndex={-1}
+        aria-hidden="true"
+        disablePictureInPicture
+        disableRemotePlayback
+        controlsList="nodownload noplaybackrate noremoteplayback nofullscreen"
+        preload="auto"
+        onContextMenu={(e) => e.preventDefault()}
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
           height: "100%",
-          objectFit: "cover",         // 화면을 꽉 채움
-          objectPosition: "15% 50%",  // 가로 15% 지점, 세로 중앙
+          objectFit: "cover",
+          objectPosition: "15% 50%",
           zIndex: 0,
+          pointerEvents: "none", // 배경 전용이면 권장
+          outline: "none",
+          userSelect: "none",
         }}
       />
       {/* 오버레이 */}
