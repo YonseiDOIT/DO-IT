@@ -1,19 +1,25 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import {
-  AnimatePresence,
-  motion,
-} from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function RecruitLanding() {
   const [field, setField] = useState('');
   const [fieldModile, setFieldMobile] = useState('');
+  const containerRef = useRef(null);
 
   useEffect(() => {
+    // 초기 진입 시 VIDEO가 포커스를 잡으면 강제 해제한다.
+    const act = document.activeElement;
+    if (act && act.tagName === 'VIDEO') {
+      try { act.blur(); } catch {}
+      // 안전한 컨테이너로 포커스 이동
+      containerRef.current?.focus();
+    }
+
     const values = ['management', 'frontend', 'backend', 'design'];
     let index = 0;
     let intervalId;
-    let timeoutId = setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       intervalId = setInterval(() => {
         setFieldMobile(values[index]);
         index = (index + 1) % values.length;
@@ -25,8 +31,11 @@ export default function RecruitLanding() {
       if (intervalId) clearInterval(intervalId);
     };
   }, []);
+
   return (
     <div
+      ref={containerRef}
+      tabIndex={-1}
       style={{
         position: "relative",
         width: "100%",
@@ -40,9 +49,14 @@ export default function RecruitLanding() {
           "Pretendard,Montserrat,-apple-system,Apple SD Gothic Neo,sans-serif",
       }}
     >
+      {/* 비디오 기본 컨트롤을 전역 수준에서 숨김 */}
+      <style jsx global>{`
+        video::-webkit-media-controls,
+        video::-webkit-media-controls-enclosure,
+        video::-webkit-media-controls-panel { display: none !important; }
+      `}</style>
+
       <video
-        src="/background.webm"
-        poster="/poster.jpg"
         autoPlay
         muted
         loop
@@ -55,6 +69,7 @@ export default function RecruitLanding() {
         controlsList="nodownload noplaybackrate noremoteplayback nofullscreen"
         preload="auto"
         onContextMenu={(e) => e.preventDefault()}
+        onFocus={(e) => { try { e.currentTarget.blur(); } catch {} }}
         style={{
           position: "absolute",
           top: 0,
@@ -64,19 +79,19 @@ export default function RecruitLanding() {
           objectFit: "cover",
           objectPosition: "15% 50%",
           zIndex: 0,
-          pointerEvents: "none", // 배경 전용이면 권장
+          pointerEvents: "none",
           outline: "none",
           userSelect: "none",
         }}
-      />
+      >
+        {/* iOS 호환을 위해 mp4 우선 제공 */}
+        <source src="/background.mp4" type="video/mp4" />
+        <source src="/background.webm" type="video/webm" />
+      </video>
+
       {/* 오버레이 */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          zIndex: 1,
-        }}
-      />
+      <div style={{ position: "absolute", inset: 0, zIndex: 1 }} />
+
       {/* 메인 히어로 */}
       <main
         style={{
@@ -105,8 +120,8 @@ export default function RecruitLanding() {
           style={{
             marginTop: 20,
             fontSize: "clamp(28px, 6vw, 38px)",
-            whiteSpace: "normal",   // ✅ 줄바꿈 허용
-            wordBreak: "keep-all",  // ✅ 단어 중간 줄바꿈 금지
+            whiteSpace: "normal",
+            wordBreak: "keep-all",
           }}
         >
           함께하는 열정, 나아가는{"\u00A0"}성장
@@ -131,11 +146,11 @@ export default function RecruitLanding() {
             margin: "0 auto",
             padding: "24px 0px",
             display: "flex",
-            flexWrap: "wrap",            // ✅ 줄바꿈 허용
-            justifyContent: "space-between", // ✅ 한 줄일 땐 양끝
+            flexWrap: "wrap",
+            justifyContent: "space-between",
             alignItems: "center",
             columnGap: 16,
-            rowGap: 6,                   // ✅ 줄바꿈 시 세로 간격
+            rowGap: 6,
           }}
         >
           <div
@@ -152,52 +167,52 @@ export default function RecruitLanding() {
 
           <div
             style={{
-              flex: "0 0 auto",          // ✅ 내용 폭 유지(강제 확장 X)
+              flex: "0 0 auto",
               color:'#F1EDEA',
               fontSize: "clamp(22px, 5vw, 30px)",
               letterSpacing: ".6px",
               fontFamily: "Montserrat",
-              textAlign: "left",         // ✅ 줄바꿈되면 자동으로 왼쪽에 놓임
+              textAlign: "left",
             }}
           >
             2025. 08. 31 - 09. 06
           </div>
         </div>
-<AnimatePresence>
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ delay: 1, duration: 2 }}
-    style={{
-      position: "absolute",
-      bottom: -20,              // ✅ 화면 맨 아래에 붙임
-      left: "50%",
-      transform: "translateX(-50%)",
-      zIndex: 3,
-    }}
-  >
-    <motion.div
-      initial={{ translateY: 0 }}
-      animate={{ translateY: 10 }}
-      exit={{ translateY: 0 }}
-      transition={{
-        repeat: Infinity,
-        repeatType: "reverse",
-        ease: "circIn",
-        duration: 1,
-      }}
-    >
-      <Image
-        src="/DownBtn2.png"
-        width={70}
-        height={70}
-        alt="downBtn"
-        style={{ width: "10vw", maxWidth: "50px", height: "auto",opacity:0.4 }}
-      />
-    </motion.div>
-  </motion.div>
-</AnimatePresence>
 
+        <AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 2 }}
+            style={{
+              position: "absolute",
+              bottom: -20,
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 3,
+            }}
+          >
+            <motion.div
+              initial={{ translateY: 0 }}
+              animate={{ translateY: 10 }}
+              exit={{ translateY: 0 }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "circIn",
+                duration: 1,
+              }}
+            >
+              <Image
+                src="/DownBtn2.png"
+                width={70}
+                height={70}
+                alt="downBtn"
+                style={{ width: "10vw", maxWidth: "50px", height: "auto", opacity: 0.4 }}
+              />
+            </motion.div>
+          </motion.div>
+        </AnimatePresence>
       </footer>
     </div>
   );
