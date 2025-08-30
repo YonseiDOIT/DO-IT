@@ -36,6 +36,17 @@ export default function RootLayout({ children }) {
     <html>
       <ProjectProvider>
         <Head>
+          <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id=GTM-N76RWDNB'+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-N76RWDNB');
+            `,
+          }}
+        />
           <title>DO IT</title>
           <meta
             name="description"
@@ -44,6 +55,15 @@ export default function RootLayout({ children }) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N76RWDNB"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
           <Toaster position="top-center" reverseOrder={false} />
           <Navbar />
           {children}
