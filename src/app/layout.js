@@ -25,17 +25,29 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body>
-        {/* GA4 gtag */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-M22XJQRRYQ" />
-        <Script id="gtag-init" strategy="afterInteractive">
+      <head>
+        {/* ✅ Google Tag Manager (GTM) */}
+        <Script id="gtm-init" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-M22XJQRRYQ');
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id=GTM-N76RWDNB'+dl;
+            f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N76RWDNB');
           `}
         </Script>
+      </head>
+      <body>
+        {/* ✅ GTM (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-N76RWDNB"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
 
         <ProjectProvider>
           <Toaster position="top-center" reverseOrder={false} />
