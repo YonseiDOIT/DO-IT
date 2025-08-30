@@ -269,10 +269,9 @@ export default function Apply() {
                   className={`text-[5vw] py-[2vw] px-[7vw] md:text-2xl md:py-3 md:px-14 rounded-full bg-[#00B8FF] text-[#FFFFFF] disabled:opacity-45 ${
                     page === 11 ? 'hidden' : 'block'
                   }`}
-                  // disabled={!activeBtn}
-                  disabled={true}
+                  disabled={!activeBtn}
                 >
-                  제출 불가(모집 전)
+                  다음
                 </motion.button>
               )}
               {page === 11 && response && (

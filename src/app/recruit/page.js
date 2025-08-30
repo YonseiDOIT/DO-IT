@@ -314,9 +314,9 @@ export default function Recruit() {
         </div>
       </div>
       <div className="mb-20 md:mb-40">
-        <Link href="/recruit/apply">
-          <motion.button disabled className="flex py-3 px-8 md:py-3 md:px-10 xl:py-5 xl:px-16 bg-[#FF5938] rounded-full text-[6vw] md:text-2xl xl:text-3xl text-white disabled:opacity-45">
-            모집 전
+        <Link data-gtm = "cta-start" href="/recruit/apply">
+          <motion.button className="flex py-3 px-8 md:py-3 md:px-10 xl:py-5 xl:px-16 bg-[#FF5938] rounded-full text-[6vw] md:text-2xl xl:text-3xl text-white disabled:opacity-45">
+            지원하기
           </motion.button>
         </Link>
       </div>
