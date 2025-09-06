@@ -304,7 +304,7 @@ export default function Recruit() {
                   </span>
                   <span className="text-[4vw] md:text-base xl:text-xl md:leading-[1.8] text-[#657786] md:text-center">
                     팀원들과의 원활한 소통, 프로젝트 진행을 위해서 대면활동을
-                    원칙으로 진행합니다. 
+                    원칙으로 진행합니다.
                   </span>
                 </div>
               </div>
