@@ -175,7 +175,7 @@ export default function RecruitLanding() {
               textAlign: "left",
             }}
           >
-            2025. 08. 31 - 09. 06
+            2025. 08. 31 - 09. 09
           </div>
         </div>
 

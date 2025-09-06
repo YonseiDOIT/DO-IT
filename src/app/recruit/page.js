@@ -52,7 +52,7 @@ const faqs = [
     questions: [
       {
         q: '비전공자인데 지원이 가능할까요?',
-        a: '네, 가능합니다. 하지만 프로덕트에 대한 기초적인 지식과 지원하시는 분야와 대한 지식과 역량이 필요합니다.',
+        a: '네, 가능합니다. 하지만 프로덕트에 대한 기초적인 지식과 지원하시는 분야와 대한 최소한의 지식 필요합니다.',
       },
       // {
       //   q: '비전공자인데 지원이 가능할까요?',
@@ -60,7 +60,7 @@ const faqs = [
       // },
       {
         q: '프로젝트 경험이 없어도 가능한가요?',
-        a: '가능합니다. 하지만 팀 내에서 원활한 소통과 협업을 위해 지원하고자 하시는 분야에 대한 기본적인 지식은 알고 계셔야합니다.',
+        a: '가능합니다. 하지만 팀 내에서 원활한 소통과 협업을 위해 지원하고자 하시는 분야에 대한 최소한의 지식은 알고 계셔야합니다.',
       },
       {
         q: '4학년인데 지원이 가능할까요?',
@@ -72,7 +72,7 @@ const faqs = [
       },
       {
         q: '지원 결과는 언제 알 수 있나요?',
-        a: '서류 합격자는 9월 8일(월) 오전 9시, 최종 합격자는 9월 14일(일) 오전 9시에 이메일로 개별 안내드리며, 합격 여부와 관계없이 모두 안내드릴 예정입니다.',
+        a: '서류 합격자는 9월 10일(수) 오전 9시, 최종 합격자는 9월 14일(일) 오전 9시에 이메일로 개별 안내드리며, 합격 여부와 관계없이 모두 안내드릴 예정입니다.',
       },
     ],
   },
@@ -151,7 +151,7 @@ export default function Recruit() {
               <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row w-full md:w-3/5 justify-between items-start md:items-end md:space-x-6 pt-14 md:pt-0">
                 <div className="flex flex-col w-[85%] md:w-full md:justify-between items-start md:flex-col md:space-y-3 md:items-start">
                   <span className="text-[10vw] md:text-4xl xl:text-[40px]">
-                    8/31 - 9/6
+                    8/31 - 9/9
                   </span>
                   <span className="text-[6vw] md:text-base xl:text-xl text-[#657786]">
                     서류 접수
@@ -159,7 +159,7 @@ export default function Recruit() {
                 </div>
                 <div className="flex flex-col w-[85%] md:w-full md:justify-between items-start md:flex-col md:space-y-3 md:items-start">
                   <span className="text-[10vw] md:text-4xl xl:text-[40px]">
-                    9/9 - 9/12
+                    9/11 - 9/12
                   </span>
                   <span className="text-[6vw] md:text-base xl:text-xl text-[#657786]">
                     면접 진행
